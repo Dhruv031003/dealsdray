@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import {Layout} from "./components";
+import { Layout } from "./components";
 import {
   Login,
   ListEmployee,
@@ -23,18 +23,18 @@ const Router = createBrowserRouter([
       {
         path: "dashboard",
         element: <Dashboard></Dashboard>,
-        children: [{
-          path: "editEmployee",
-          element: <EditEmployee></EditEmployee>
-        },
-        {
-          path: "createEmployee",
-          element: <CreateEmployee></CreateEmployee>
-        }, {
-          path: "listEmployee",
-          element: <ListEmployee></ListEmployee>
-        }]
       },
+      {
+        path: "editEmployee",
+        element: <EditEmployee></EditEmployee>
+      },
+      {
+        path: "createEmployee",
+        element: <CreateEmployee></CreateEmployee>
+      }, {
+        path: "listEmployee",
+        element: <ListEmployee></ListEmployee>
+      }
     ],
   },
 ]);
