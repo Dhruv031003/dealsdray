@@ -14,7 +14,7 @@ function Navbar() {
               <Link to="/" class="flex items-center">Home</Link>
             </li>
             <li class="flex items-center p-1 text-sm gap-x-2 text-slate-600">
-              <Link to="/dashboard/listEmployee" class="flex items-center">Employee List</Link>
+              <Link to="/listEmployee" class="flex items-center">Employee List</Link>
             </li>
           </ul>
         </div>
